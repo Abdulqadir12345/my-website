@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="Image/png" href="Images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/orderstyle.css" />
+    <title>Groceries Supermarket | Orders</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">GrociesSM</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="dairyproducts.html">Products</a></li>
+          <li><a href="order.html" class="active">Orders</a></li>
+          <li><a href="loyalty.html">Loyalty</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+
+    <main>
+      <section class="intro-section">
+        <h2>Order Your Products</h2>
+        <p>
+          Use the form below to order your products and add them to your
+          shopping cart.
+        </p>
+      </section>
+
+      <section class="form-section">
+        <h2>Order Form</h2>
+        <form action="submit_order.php" method="post">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+              <option value="milk">Milk - 250 LKR</option>
+              <option value="cheese">Cheese - 300 LKR</option>
+              <option value="yogurt">Yogurt - 150 LKR</option>
+              <option value="butter">Butter - 200 LKR</option>
+              <option value="icecream">Ice Cream - 350 LKR</option>
+              <option value="curd">Curd - 100 LKR</option>
+              <option value="cream">Cream - 150 LKR</option>
+              <option value="paneer">Paneer - 250 LKR</option>
+              <option value="sourcream">Sour Cream - 200 LKR</option>
+              <option value="buttermilk">Buttermilk - 150 LKR</option>
+              <option value="ghee">Ghee - 400 LKR</option>
+              <option value="kefir">Kefir - 300 LKR</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              required
+            />
+          </div>
+          <button type="submit">Add to Cart</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Abdul Qadir. All Rights Reserved.</p>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </p>
+      </div>
+      <div class="footer">
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Terms of Use</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
